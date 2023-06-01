@@ -8,6 +8,9 @@ public class Types {
     static float floatNumber;
     static char aChar = 'C';
     static String aString = "name";
+    static int[] newArray = {1, 2, 3};
+    static int[] getNewArray1 = new int[5];
+
     public static void main(String[] args) {
         System.out.println(yesOrNo);
         System.out.println(byteNumber);
