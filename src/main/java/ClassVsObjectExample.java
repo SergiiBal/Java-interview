@@ -8,21 +8,33 @@ public class ClassVsObjectExample {
         //true or false?
         System.out.println(classVsObjectExample1.equals(classVsObjectExample2));
 
-        Phone ostapPhone = new Phone();
-        ostapPhone.model = "Samsung";
+        Phone ostapPhone = new Phone("Samsung");
         Phone tarasPhone = new Phone();
-        tarasPhone.model = "Samsung";
         //I want it to be true!
         System.out.println(ostapPhone.equals(tarasPhone));
         SuperPhone sergiiPhone = new SuperPhone();
-        tarasPhone.model = "Samsung";
         //this is false, because Sergii's samsung is a SuperPhone
         System.out.println(ostapPhone.equals(sergiiPhone));
+
+        //would throw exception, try it
+        //new Phone("");
     }
 }
 
 class Phone {
-    String model;
+    private final String model;
+
+    //each class by default has () constructor. But be can define our own, if we want it.
+    public Phone() {
+        model = "Samsung";
+    }
+
+    public Phone(String model) {
+        if (model.isEmpty()) {
+            throw new RuntimeException("Phone should have name!!!");
+        }
+        this.model = model;
+    }
 
     @Override
     public boolean equals(Object o) {
