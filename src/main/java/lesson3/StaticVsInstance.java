@@ -1,3 +1,5 @@
+package lesson3;
+
 public class StaticVsInstance {
     private static String staticValue = "Koza";
     private String instanceValue = "Koza";

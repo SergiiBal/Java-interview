@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Types {
     static boolean yesOrNo;
     static byte byteNumber = Byte.MAX_VALUE;

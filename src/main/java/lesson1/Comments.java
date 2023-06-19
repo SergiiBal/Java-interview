@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Comments {
     //single line comment
        /* multi

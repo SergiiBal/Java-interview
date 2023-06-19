@@ -1,3 +1,5 @@
+package lesson3;
+
 import java.util.Objects;
 
 public class ClassVsObjectExample {
@@ -13,11 +15,11 @@ public class ClassVsObjectExample {
         //I want it to be true!
         System.out.println(ostapPhone.equals(tarasPhone));
         SuperPhone sergiiPhone = new SuperPhone();
-        //this is false, because Sergii's samsung is a SuperPhone
+        //this is false, because Sergii's samsung is a lesson3.SuperPhone
         System.out.println(ostapPhone.equals(sergiiPhone));
 
         //would throw exception, try it
-        //new Phone("");
+        //new lesson3.Phone("");
     }
 }
 
@@ -31,7 +33,7 @@ class Phone {
 
     public Phone(String model) {
         if (model.isEmpty()) {
-            throw new RuntimeException("Phone should have name!!!");
+            throw new RuntimeException("lesson3.Phone should have name!!!");
         }
         this.model = model;
     }

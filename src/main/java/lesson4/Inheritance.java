@@ -1,3 +1,5 @@
+package lesson4;
+
 public class Inheritance {
     public static void main(String[] args) {
         SubClass subClass = new SubClass();
@@ -12,5 +14,5 @@ class SuperClass {
 }
 
 class SubClass extends SuperClass {
-    //inherits the methods from SuperClass
+    //inherits the methods from lesson4.SuperClass
 }
