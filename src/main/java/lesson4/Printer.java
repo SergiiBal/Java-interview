@@ -54,7 +54,7 @@ class Office {
         Paper printedPaper = office.usePrinter("Hello World");
         System.out.println(printedPaper.content);
         Office officeWithBroken = new Office(new BrokenPrinter());
-        Paper printedPaper1 = office.usePrinter("Hello World");
+        Paper printedPaper1 = officeWithBroken.usePrinter("Hello World");
         System.out.println(printedPaper1.content);
     }
 }
