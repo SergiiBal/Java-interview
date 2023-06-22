@@ -1,4 +1,4 @@
-package lesson5;
+package lesson5_and_6;
 
 public class OverrideExample {
 
