@@ -12,13 +12,13 @@ public class Filesystem {
 
     public static void main(String[] args) throws NoSuchFileException {
         //bad example of handling exceptions
-        deleteOnFilesystem();
+      // deleteOnFilesystem();
 
         //good example of handling
-        goodExample();
+      //  goodExample();
 
         //calling to show runtime exception
-        runtimeExample();
+       runtimeExample();
     }
 
     private static void goodExample() throws NoSuchFileException {
@@ -37,7 +37,7 @@ public class Filesystem {
     private static void runtimeExample() throws NoSuchFileException {
         Filesystem filesystem = new Filesystem();
         try {
-            filesystem.deleteFileByName("koza");
+            filesystem.deleteFileByName("ostap.txt1");
         } catch (FilesystemIsNotAvailableException e) {
             throw new RuntimeException(e);
         }
